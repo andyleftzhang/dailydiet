@@ -98,10 +98,17 @@ Page({
             }
         }).then((res) => {
             console.log(res.result)
-
-            this.setData({
-                blogList: this.data.blogList.concat(res.result)
-            })
+            if(start === 0){
+                this.setData({
+                    blogList: res.result
+                })
+            }else{
+                this.setData({
+                    blogList: this.data.blogList.concat(res.result)
+                })
+            }
+           
+           
             wx.hideLoading()
             wx.stopPullDownRefresh()
         })
@@ -110,9 +117,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.setData({
-            blogList: []
-        })
+        
         this._loadBlogList()
     },
 

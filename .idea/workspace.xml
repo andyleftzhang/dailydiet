@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +51,39 @@
       <option name="presentableId" value="Default" />
       <updated>1602400143445</updated>
       <workItem from="1602400144891" duration="9588000" />
-      <workItem from="1602428506925" duration="293000" />
+      <workItem from="1602428506925" duration="434000" />
+      <workItem from="1602429813731" duration="463000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1602428933102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602428933102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="136" key="#Inspections" timestamp="1602401996284">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="593" y="136" key="#Inspections/0.-877.1440.877/0.23.1440.835@0.23.1440.835" timestamp="1602401996284" />
+    <state x="435" y="23" width="846" height="835" key="CommitChangelistDialog2" timestamp="1602429899255">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="435" y="23" width="846" height="835" key="CommitChangelistDialog2/0.23.1440.835@0.23.1440.835" timestamp="1602429899255" />
+    <state x="458" y="193" key="Vcs.Push.Dialog.v2" timestamp="1602428923134">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="458" y="193" key="Vcs.Push.Dialog.v2/0.23.1440.835@0.23.1440.835" timestamp="1602428923134" />
     <state x="673" y="196" width="604" height="490" key="find.popup" timestamp="1602408146621">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
