@@ -1,0 +1,36 @@
+<!--components/blog-ctrl/blog-ctrl.wxml-->
+<view class="ctrl">
+    <view class="ctrl-item" bind:tap="onComment">
+        <text class="iconfont icon-pinglun icon"></text>
+        <text>{{blog.count}}</text>
+    </view>
+    <view class="ctrl-item">
+        <button class="share-btn"
+                hover-class="share-hover"
+                open-type="share"
+                data-blogid="{{blogId}}"
+                data-blog="{{blog}}">
+            <text class="iconfont icon-fenxiang icon"></text>
+            <text>分享</text>
+        </button>
+    </view>
+</view>
+
+<x-login modalShow="{{loginShow}}"
+         bind:loginsuccess="onLoginSuccess"
+         bind:loginfail="onLoginFail">
+</x-login>
+
+<x-bottom-modal modalShow="{{modalShow}}">
+    <view slot="modal-content">
+        <textarea value="{{content}}"
+                  name="content"
+                  class="comment-content"
+                  placeholder="输入评论"
+                  bindinput="onInput"
+                  fixed="true">
+        </textarea>
+        <button class="send" bindtap="onSend">发送</button>
+    </view>
+</x-bottom-modal>
+

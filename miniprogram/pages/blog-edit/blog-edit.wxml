@@ -1,0 +1,33 @@
+<!--pages/blog-edit/blog-edit.wxml-->
+<view class="container">
+<!--    文案-->
+    <textarea class="content"
+              placeholder="分享饮食记录..."
+              maxlength="{{MAX_LENGTH}}"
+              auto-focus
+              bindinput="onInput"
+              bindfocus="onFocus"
+              bindblur="onBlur"
+    ></textarea>
+<!--    选项-->
+    <text class="blog-tag">{{blogTag}}</text>
+<!--    图片-->
+    <view class="image-list">
+        <!--        显示图片-->
+        <block wx:for="{{images}}" wx:key="*this">
+            <view class="image-wrap">
+                <image class="image" src="{{item}}" mode="aspectFill" bind:tap="onPreviewImages" data-currentscr="{{item}}"></image>
+                <text class="iconfont icon-shanchu" bind:tap="onDeleteImg" data-index="{{index}}"></text>
+            </view>
+        </block>
+        <!--        选择图片-->
+        <view class="image-wrap selectphoto" hidden="{{images.length >= MAX_IMG_NUM}}" bind:tap="onChooseImage">
+            <text class="iconfont icon-jiahao"></text>
+        </view>
+    </view>
+</view>
+
+<view class="footer" style="bottom:{{footerBottom}}px">
+    <text class="words-num">{{wordsNum}}</text>
+    <button size="mini" class="send-btn" bind:tap="send">发布</button>
+</view>

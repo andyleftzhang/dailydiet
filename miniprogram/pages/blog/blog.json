@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "x-search": "../../components/search/search",
+    "x-login": "/components/login/login",
+    "x-blog-card": "/components/blog-card/blog-card",
+    "x-blog-ctrl": "/components/blog-ctrl/blog-ctrl",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  },
+  "navigationBarTitleText": "饮食日常",
+  "enablePullDownRefresh": true
+}

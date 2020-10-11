@@ -1,0 +1,39 @@
+<!--pages/blog/blog.wxml-->
+<view class="container">
+    <!--    头部-->
+    <view class="header">
+        <view class="publish-container" bind:tap="onPublish">
+            <i class="iconfont icon-fabu"/>
+        </view>
+        <view class="search-container">
+            <!-- iconfont 和 icon-sousuo 是传入组件内部的样式名称，iconfont（自定义名称）="iconfont（外部样式文件中定义的样式名）"  -->
+            <x-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch"/>
+        </view>
+    </view>
+
+    <!-- 博客卡片列表-->
+    <view class="blog-list">
+        <block wx:for="{{blogList}}" wx:key="_id">
+            <view class="blog-panel">
+                <x-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"></x-blog-card>
+                <x-blog-ctrl wx:if="{{false}}" iconfont="iconfont"
+                             icon-pinglun="icon-pinglun"
+                             icon-fenxiang="icon-fenxiang"
+                             blogId="{{item._id}}"
+                             blog="{{item}}"
+                ></x-blog-ctrl>
+            </view>
+        </block>
+    </view>
+
+    <x-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess"
+             bind:loginfail="onLoginFail">
+    </x-login>
+
+    <van-action-sheet
+            show="{{ show }}"
+            actions="{{ actions }}"
+            bind:close="onClose"
+            bind:select="onSelect"
+    />
+</view>

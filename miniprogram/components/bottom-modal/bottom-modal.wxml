@@ -1,0 +1,8 @@
+<!--components/bottom-modal/bottom-modal.wxml-->
+<view class="modal" hidden="{{!modalShow}}">
+    <view class="bg"></view>
+    <view class="panel">
+        <text class="iconfont icon-shanchu1 close" bind:tap="onClose"></text>
+        <slot name="modal-content"></slot>
+    </view>
+</view>
