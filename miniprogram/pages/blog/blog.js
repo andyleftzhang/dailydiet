@@ -159,19 +159,22 @@ Page({
         console.log(blog)
         wx.showModal({
             title: '删除该饮食日常？',
-            success: result => {
+            success: res => {
                 console.log("success")
-                wx.cloud.database()
-                    .collection('blog')
-                    .doc(blog._id)
-                    .remove()
-                    .then((res) => {
-                        console.log(res)
-                        this._loadBlogList()
-                        wx.showToast({
-                            title: '删除成功'
+                if (res.confirm){
+                    wx.cloud.database()
+                        .collection('blog')
+                        .doc(blog._id)
+                        .remove()
+                        .then((res) => {
+                            console.log(res)
+                            this._loadBlogList()
+                            wx.showToast({
+                                title: '删除成功'
+                            })
                         })
-                    })
+                }
+
             }
         })
     },
