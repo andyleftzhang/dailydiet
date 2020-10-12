@@ -38,6 +38,8 @@
     <van-action-sheet
             show="{{ show }}"
             actions="{{ actions }}"
+            cancel-text="取消"
+            bind:cancel="onClose"
             bind:close="onClose"
             bind:select="onSelect"
     />

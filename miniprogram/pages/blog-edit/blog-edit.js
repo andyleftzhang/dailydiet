@@ -18,7 +18,7 @@ Page({
 
     pageData: {
         userInfo: {},
-        content: ''
+        content: '',
     },
 
     onInput(event) {
@@ -82,7 +82,8 @@ Page({
         })
     },
 
-    send() {
+    async send() {
+        //内容检查
         //数据 -> 云数据库
         //数据库： 内容、图片fileID, openId, 昵称， 头像， 时间
 
@@ -93,6 +94,89 @@ Page({
             })
             return
         }
+
+        // 安全检查
+        // 先检查文本
+        wx.showLoading({
+            title: '内容审核中',
+            mask: true  // 蒙层
+        })
+        let msgSecurity = await wx.cloud.callFunction({
+            name: 'security',
+            data: {
+                $url: 'msg',
+                content: this.pageData.content
+            }
+        }).then((res) => {
+            return res.result;
+        })
+        if (msgSecurity.errCode !== 0) {
+            wx.hideLoading()
+            wx.showModal({
+                title: '风险提示',
+                content: '包含敏感内容'
+            })
+            return
+        }
+
+        let imgCheck = true;
+        //在检查图片
+        // for (const item of this.data.images) {
+        //
+        //
+        //     let buffer = wx.getFileSystemManager().readFileSync(item);
+        //     if (buffer.length > 1024 * 1024 ){
+        //         wx.compressImage({
+        //             src: item,
+        //             quality: 60,
+        //             success: async result => {
+        //                 console.log(result)
+        //                 let path = result.tempFilePath;
+        //                 let buffer = wx.getFileSystemManager().readFileSync(path);
+        //                 console.log(buffer)
+        //                 let imgSecurity = await wx.cloud.callFunction({
+        //                     name: 'security',
+        //                     data: {
+        //                         $url: 'img',
+        //                         contentType: 'image/png',
+        //                         img: buffer
+        //                     }
+        //                 }).then((res) => {
+        //                     return res.result;
+        //                 })
+        //                 console.log(imgSecurity)
+        //                 if (imgSecurity.errCode !== 0) {
+        //                     imgCheck = false;
+        //                 }
+        //             }
+        //         })
+        //     }else {
+        //         let imgSecurity = await wx.cloud.callFunction({
+        //             name: 'security',
+        //             data: {
+        //                 $url: 'img',
+        //                 contentType: 'image/png',
+        //                 img: buffer
+        //             }
+        //         }).then((res) => {
+        //             return res.result;
+        //         })
+        //         console.log(imgSecurity)
+        //         if (imgSecurity.errCode !== 0) {
+        //             imgCheck = false;
+        //         }
+        //     }
+        //
+        //
+        // }
+        wx.hideLoading()
+        // if (!imgCheck) {
+        //     wx.showModal({
+        //         title: '风险提示',
+        //         content: '包含敏感内容',
+        //     })
+        //     return
+        // }
 
         wx.showLoading({
             title: '发布中',
@@ -142,9 +226,9 @@ Page({
 
                 const pages = getCurrentPages()
                 // if (pages > 1) {
-                    wx.navigateBack()
-                    const prevPage = pages[pages.length - 2]
-                    prevPage.onPullDownRefresh()
+                wx.navigateBack()
+                const prevPage = pages[pages.length - 2]
+                prevPage.onPullDownRefresh()
                 // }
             })
 
@@ -168,5 +252,6 @@ Page({
             wordsNum: `${this.data.wordsNum}/${this.data.MAX_LENGTH}`,
             blogTag: options.blogTag
         })
-    }
+    },
+
 })

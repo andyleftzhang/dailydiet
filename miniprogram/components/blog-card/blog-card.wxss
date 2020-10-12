@@ -13,11 +13,19 @@ page {
 }
 
 .blog-tag{
-    background: #d43c33;
+    /*background: #d43c33;*/
     color: #fff;
     font-size: 28rpx;
     padding: 5rpx 20rpx;
     border-radius: 10rpx;
+}
+
+.green-tag {
+    background-color: forestgreen;
+}
+
+.warn-tag {
+    background-color: #d43c33;
 }
 
 .blog-portrait {

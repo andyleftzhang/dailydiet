@@ -12,15 +12,34 @@ Page({
         actions: [
             {
                 name: '早餐',
+                subname:'7:00~9:00'
+            },
+            {
+                name: '加餐',
+                subname:'10:00~11:00',
+                color: '#ee0a24'
             },
             {
                 name: '午餐',
-            }, {
-                name: '晚餐'
-            }
+                subname:'11:30~13:30'
+            },
+            {
+                name: '加餐',
+                subname:'14:00~16:00',
+                color: '#ee0a24'
+            },
+            {
+                name: '晚餐',
+                subname:'17:30~19:00'
+            },
+            {
+                name: '夜宵',
+                subname:'20:00~21:00',
+                color: '#ee0a24'
+            },
         ],
         userInfo: {},
-        userid:''
+        userid: ''
     },
 
     onPublish() {
@@ -161,7 +180,7 @@ Page({
             title: '删除该饮食日常？',
             success: res => {
                 console.log("success")
-                if (res.confirm){
+                if (res.confirm) {
                     wx.cloud.database()
                         .collection('blog')
                         .doc(blog._id)

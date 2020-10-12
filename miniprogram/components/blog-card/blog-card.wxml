@@ -7,7 +7,7 @@
         </view>
     </view>
     <view wx:if="{{blog.blogTag!=null}}">
-        <text class="blog-tag">{{blog.blogTag}}</text>
+        <text class="blog-tag {{(blog.blogTag==='加餐' || blog.blogTag === '夜宵')? 'warn-tag':'green-tag'}}">{{blog.blogTag}}</text>
     </view>
     <view class="blog-content">{{blog.content}}</view>
     <view class="blog-img">
