@@ -2,7 +2,7 @@
 .container {
     display: flex;
     align-items: center;
-    margin-left: 20rpx;
+    margin-left: 0rpx;
     position: relative;
 }
 

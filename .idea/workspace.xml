@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/components/blog-card/blog-card.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/blog-card/blog-card.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/miniprogram" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +56,7 @@
       <workItem from="1602400144891" duration="9588000" />
       <workItem from="1602428506925" duration="434000" />
       <workItem from="1602429813731" duration="463000" />
+      <workItem from="1602467663897" duration="2833000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>

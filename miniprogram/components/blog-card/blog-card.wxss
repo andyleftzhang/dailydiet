@@ -16,7 +16,8 @@ page {
     background: #d43c33;
     color: #fff;
     font-size: 28rpx;
-    padding: 0 20rpx;
+    padding: 5rpx 20rpx;
+    border-radius: 10rpx;
 }
 
 .blog-portrait {

@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-.header .icon-fabu {
-    font-size: 48rpx;
-}
-
 .search-container {
     flex: 1;
 }
@@ -29,4 +25,21 @@
 .blog-panel {
     margin-bottom: 20rpx;
     box-sizing: border-box;
+}
+
+.publish-container {
+    position: fixed;
+    bottom: 60rpx;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+    background-color: #FBD956;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publish-container .icon-jiahao {
+    font-size: 45rpx;
+    font-weight: bold;
 }
