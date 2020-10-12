@@ -18,6 +18,9 @@
         <block wx:for="{{blogList}}" wx:key="_id">
             <view class="blog-panel">
                 <x-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"></x-blog-card>
+                <view wx:if="{{item._openid === userid}}" class="blog-shanchu">
+                    <text class="text-shanchu" bind:tap="goDelete" data-blog="{{item}}">删除</text>
+                </view>
                 <x-blog-ctrl wx:if="{{false}}" iconfont="iconfont"
                              icon-pinglun="icon-pinglun"
                              icon-fenxiang="icon-fenxiang"

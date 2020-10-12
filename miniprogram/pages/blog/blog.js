@@ -19,14 +19,14 @@ Page({
                 name: '晚餐'
             }
         ],
-        userInfo: {}
+        userInfo: {},
+        userid:''
     },
 
     onPublish() {
         // this.setData({
         //     modalShow: true
         // })
-
         //判断用户授权信息
         wx.getSetting({
             success: (res) => {
@@ -98,17 +98,15 @@ Page({
             }
         }).then((res) => {
             console.log(res.result)
-            if(start === 0){
+            if (start === 0) {
                 this.setData({
                     blogList: res.result
                 })
-            }else{
+            } else {
                 this.setData({
                     blogList: this.data.blogList.concat(res.result)
                 })
             }
-
-
             wx.hideLoading()
             wx.stopPullDownRefresh()
         })
@@ -117,8 +115,8 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
         this._loadBlogList()
+        this.getOpenId()
     },
 
     /**
@@ -152,6 +150,32 @@ Page({
         }
     },
 
+    /**
+     * 删除
+     * @param event
+     */
+    goDelete(event) {
+        const blog = event.target.dataset.blog;
+        console.log(blog)
+        wx.showModal({
+            title: '删除该饮食日常？',
+            success: result => {
+                console.log("success")
+                wx.cloud.database()
+                    .collection('blog')
+                    .doc(blog._id)
+                    .remove()
+                    .then((res) => {
+                        console.log(res)
+                        this._loadBlogList()
+                        wx.showToast({
+                            title: '删除成功'
+                        })
+                    })
+            }
+        })
+    },
+
     onClose() {
         this.setData({show: false});
     },
@@ -162,4 +186,15 @@ Page({
             url: `../blog-edit/blog-edit?nickName=${this.data.userInfo.nickName}&avatarUrl=${this.data.userInfo.avatarUrl}&blogTag=${event.detail.name}`
         })
     },
+
+    getOpenId() {
+        wx.cloud.callFunction({
+            name: 'login'
+        }).then((res) => {
+            this.setData({
+                userid: res.result.openid
+            })
+        })
+
+    }
 })

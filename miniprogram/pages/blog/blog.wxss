@@ -43,3 +43,14 @@
     font-size: 45rpx;
     font-weight: bold;
 }
+
+.blog-shanchu {
+    background-color: white;
+    padding-bottom: 20rpx;
+    padding-left: 20rpx;
+}
+
+.text-shanchu {
+    font-size: 24rpx;
+    color: #939393;
+}

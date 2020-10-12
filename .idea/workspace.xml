@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="init">
+    <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/components/blog-card/blog-card.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/blog-card/blog-card.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" afterDir="false" />
@@ -56,7 +54,7 @@
       <workItem from="1602400144891" duration="9588000" />
       <workItem from="1602428506925" duration="434000" />
       <workItem from="1602429813731" duration="463000" />
-      <workItem from="1602467663897" duration="2833000" />
+      <workItem from="1602467663897" duration="6103000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>
@@ -65,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602428933102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 调整发布位置">
+      <created>1602470580622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602470580622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,24 +78,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="feat: 调整发布位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 调整发布位置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="136" key="#Inspections" timestamp="1602401996284">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="593" y="136" key="#Inspections/0.-877.1440.877/0.23.1440.835@0.23.1440.835" timestamp="1602401996284" />
-    <state x="435" y="23" width="846" height="835" key="CommitChangelistDialog2" timestamp="1602429899255">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state x="508" y="23" width="846" height="835" key="CommitChangelistDialog2" timestamp="1602470580202">
+      <screen x="0" y="23" width="1680" height="983" />
     </state>
     <state x="435" y="23" width="846" height="835" key="CommitChangelistDialog2/0.23.1440.835@0.23.1440.835" timestamp="1602429899255" />
+    <state x="508" y="23" key="CommitChangelistDialog2/1525.-1417.2560.1417/0.23.1680.983@0.23.1680.983" timestamp="1602470580202" />
     <state x="458" y="193" key="Vcs.Push.Dialog.v2" timestamp="1602428923134">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="458" y="193" key="Vcs.Push.Dialog.v2/0.23.1440.835@0.23.1440.835" timestamp="1602428923134" />
-    <state x="673" y="196" width="604" height="490" key="find.popup" timestamp="1602408146621">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state x="785" y="226" width="705" height="576" key="find.popup" timestamp="1602472464259">
+      <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="673" y="196" width="604" height="490" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1602408146621" />
+    <state x="785" y="226" width="705" height="576" key="find.popup/1525.-1417.2560.1417/0.23.1680.980@0.23.1680.980" timestamp="1602472464259" />
   </component>
 </project>
