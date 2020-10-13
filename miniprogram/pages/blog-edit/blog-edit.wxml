@@ -1,5 +1,6 @@
 <!--pages/blog-edit/blog-edit.wxml-->
 <view class="container">
+
     <!--    文案-->
     <textarea class="content"
               placeholder="分享饮食记录..."
@@ -9,8 +10,12 @@
               bindfocus="onFocus"
               bindblur="onBlur"
     ></textarea>
+
     <!--    选项-->
-    <text class="blog-tag">{{blogTag}}</text>
+    <view class="tag-container">
+        <text class="blog-tag {{blogTag==='加餐'|| blogTag === '夜宵' ? 'warn-tag':'green-tag'}}">{{blogTag}}</text>
+    </view>
+
     <!--    图片-->
     <view class="image-list">
         <!--        显示图片-->
@@ -26,6 +31,7 @@
             <text class="iconfont icon-jiahao"></text>
         </view>
     </view>
+
 </view>
 
 <view class="footer" style="bottom:{{footerBottom}}px">

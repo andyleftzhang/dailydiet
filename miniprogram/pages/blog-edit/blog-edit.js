@@ -13,17 +13,17 @@ Page({
         footerBottom: 0,
         images: [],
         MAX_IMG_NUM: 9,
-        blogTag: ''
+        blogTag: '',
+        content: '',
     },
 
     pageData: {
         userInfo: {},
-        content: '',
     },
 
     onInput(event) {
         console.log(event.detail.value)
-        this.pageData.content = event.detail.value;
+        // this.pageData.content = event.detail.value;
         let wordsNum = event.detail.value.length
         if (wordsNum >= this.data.MAX_LENGTH) {
             wordsNum = '最大字数为' + this.data.MAX_LENGTH
@@ -31,7 +31,8 @@ Page({
             wordsNum = `${wordsNum}/${this.data.MAX_LENGTH}`
         }
         this.setData({
-            wordsNum
+            wordsNum,
+            content: event.detail.value
         })
     },
 

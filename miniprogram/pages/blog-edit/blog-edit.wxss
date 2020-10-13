@@ -44,12 +44,24 @@
     margin-top: 20rpx;
 }
 
+.tag-container {
+    width: 100%;
+    display: flex;
+}
+
 .blog-tag {
-    background: #d43c33;
     color: #fff;
     font-size: 28rpx;
-    margin-right: 20rpx;
     padding: 0 20rpx;
+    margin: 10rpx 0rpx;
+    border-radius: 10rpx;
+}
+.green-tag {
+    background-color: forestgreen;
+}
+
+.warn-tag {
+    background-color: #d43c33;
 }
 
 .image-wrap {
