@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudfunctions/getQRcode/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudfunctions/getQRcode/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudfunctions/getQRcode/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudfunctions/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloudfunctions/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/components/search/search.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/search/search.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/search/search.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/miniprogram_npm/date-fns/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/date-fns/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/blog/blog.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +58,7 @@
       <workItem from="1602400144891" duration="9588000" />
       <workItem from="1602428506925" duration="434000" />
       <workItem from="1602429813731" duration="463000" />
-      <workItem from="1602467663897" duration="39063000" />
+      <workItem from="1602467663897" duration="41499000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>
@@ -115,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602576338118</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: 添加个人中心和小程序码">
+      <created>1602585241263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602585241263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,17 +123,19 @@
     <MESSAGE value="fix:修复删除异常" />
     <MESSAGE value="feat: 增加加餐选项" />
     <MESSAGE value="feat: 优化编辑功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化编辑功能" />
+    <MESSAGE value="feat: 添加个人中心和小程序码" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加个人中心和小程序码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="136" key="#Inspections" timestamp="1602401996284">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="593" y="136" key="#Inspections/0.-877.1440.877/0.23.1440.835@0.23.1440.835" timestamp="1602401996284" />
-    <state x="508" y="23" width="846" height="835" key="CommitChangelistDialog2" timestamp="1602576337908">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state x="508" y="23" width="846" height="835" key="CommitChangelistDialog2" timestamp="1602585240838">
+      <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="435" y="23" width="846" height="835" key="CommitChangelistDialog2/0.23.1440.835@0.23.1440.835" timestamp="1602429899255" />
+    <state x="508" y="23" key="CommitChangelistDialog2/1525.-1417.2560.1417/0.23.1680.979@0.23.1680.979" timestamp="1602585240838" />
     <state x="508" y="23" key="CommitChangelistDialog2/1525.-1417.2560.1417/0.23.1680.980@0.23.1680.980" timestamp="1602576337908" />
     <state x="508" y="23" key="CommitChangelistDialog2/1525.-1417.2560.1417/0.23.1680.981@0.23.1680.981" timestamp="1602500163588" />
     <state x="508" y="23" key="CommitChangelistDialog2/1525.-1417.2560.1417/0.23.1680.983@0.23.1680.983" timestamp="1602470580202" />
