@@ -87,8 +87,8 @@ Page({
         //内容检查
         //数据 -> 云数据库
         //数据库： 内容、图片fileID, openId, 昵称， 头像， 时间
-
-        if (this.pageData.content.trim() === '') {
+        console.log('发布')
+        if (this.data.content.trim() === '') {
             wx.showToast({
                 title: '请输入内容',
                 icon: "none"
@@ -106,7 +106,7 @@ Page({
             name: 'security',
             data: {
                 $url: 'msg',
-                content: this.pageData.content
+                content: this.data.content
             }
         }).then((res) => {
             return res.result;
@@ -214,7 +214,7 @@ Page({
             db.collection('blog').add({
                 data: {
                     ...this.pageData.userInfo,
-                    content: this.pageData.content,
+                    content: this.data.content,
                     img: fileIds,
                     blogTag: this.data.blogTag,
                     createTime: db.serverDate()
