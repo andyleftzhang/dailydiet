@@ -9,7 +9,7 @@
     <view class="header">
         <view class="search-container">
             <!-- iconfont 和 icon-sousuo 是传入组件内部的样式名称，iconfont（自定义名称）="iconfont（外部样式文件中定义的样式名）"  -->
-            <x-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch"/>
+            <x-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch" bind:gotoMine="gotoMine"/>
         </view>
     </view>
 
@@ -18,9 +18,15 @@
         <block wx:for="{{blogList}}" wx:key="_id">
             <view class="blog-panel">
                 <x-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"></x-blog-card>
-                <view wx:if="{{item._openid === userid}}" class="blog-shanchu">
-                    <text class="text-shanchu" bind:tap="goDelete" data-blog="{{item}}">删除</text>
+
+                <view class="blog-control">
+                    <view wx:if="{{item._openid === userid}}" class="blog-shanchu">
+                        <text class="text-shanchu" bind:tap="goDelete" data-blog="{{item}}">删除</text>
+                    </view>
+
+<!--                    <view class="blog-zan" bind:tap="onLike" data-blog="{{item}}"> 赞</view>-->
                 </view>
+
                 <x-blog-ctrl wx:if="{{false}}" iconfont="iconfont"
                              icon-pinglun="icon-pinglun"
                              icon-fenxiang="icon-fenxiang"

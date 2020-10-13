@@ -12,29 +12,29 @@ Page({
         actions: [
             {
                 name: '早餐',
-                subname:'7:00~9:00'
+                subname: '7:00~9:00'
             },
             {
                 name: '加餐',
-                subname:'10:00~11:00',
+                subname: '10:00~11:00',
                 color: '#ee0a24'
             },
             {
                 name: '午餐',
-                subname:'11:30~13:30'
+                subname: '11:30~13:30'
             },
             {
                 name: '加餐',
-                subname:'14:00~16:00',
+                subname: '14:00~16:00',
                 color: '#ee0a24'
             },
             {
                 name: '晚餐',
-                subname:'17:30~19:00'
+                subname: '17:30~19:00'
             },
             {
                 name: '夜宵',
-                subname:'20:00~21:00',
+                subname: '20:00~21:00',
                 color: '#ee0a24'
             },
         ],
@@ -209,6 +209,20 @@ Page({
         })
     },
 
+    onLike(event) {
+        console.log(event.target.dataset.blog)
+        const blog = event.target.dataset.blog
+        wx.cloud.callFunction({
+            name: 'blog',
+            data: {
+                $url: 'zan',
+                id: blog._id
+            }
+        }).then(res => {
+            console.log(res.result)
+        })
+    },
+
     getOpenId() {
         wx.cloud.callFunction({
             name: 'login'
@@ -217,6 +231,13 @@ Page({
                 userid: res.result.openid
             })
         })
+    },
 
+    gotoMine(event){
+        console.log(event)
+        const openid = event.detail.openid
+        wx.navigateTo({
+            url: `../mine/mine?openid=${openid}`
+        })
     }
 })

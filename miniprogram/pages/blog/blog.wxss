@@ -45,12 +45,26 @@
 }
 
 .blog-shanchu {
-    background-color: white;
-    padding-bottom: 20rpx;
-    padding-left: 20rpx;
+
 }
 
 .text-shanchu {
     font-size: 24rpx;
+    color: #939393;
+}
+
+.blog-control {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-bottom: 20rpx;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-zan {
+    padding: 10rpx;
     color: #939393;
 }

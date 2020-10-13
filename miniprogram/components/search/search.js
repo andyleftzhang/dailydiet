@@ -34,6 +34,11 @@ Component({
             this.triggerEvent('search',{
                 keyword
             })
+        },
+        gotoMine(){
+            this.triggerEvent('gotoMine',{
+                openid: ''
+            })
         }
     }
 })

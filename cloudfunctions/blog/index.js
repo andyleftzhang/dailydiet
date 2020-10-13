@@ -38,6 +38,9 @@ exports.main = async (event, context) => {
             })
     })
 
+    app.router('zan', async (ctx, next)=>{
+    })
+
     // return {
     //   event,
     //   openid: wxContext.OPENID,

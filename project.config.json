@@ -78,6 +78,13 @@
           "id": -1,
           "name": "pages/blog-edit/blog-edit",
           "pathName": "pages/blog-edit/blog-edit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
           "scene": null
         }
       ]

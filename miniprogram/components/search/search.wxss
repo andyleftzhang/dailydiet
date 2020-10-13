@@ -19,11 +19,14 @@
     color: #999;
 }
 
-.search {
-    background: #d43c33;
-    color: #fff;
+.userinfo-container {
     margin-left: 20rpx;
-    font-size: 24rpx;
+    width: 68rpx;
+    height: 68rpx;
+    border: 3rpx solid #FBD956;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .find {
