@@ -15,7 +15,7 @@ Page({
         ],
         headerImgId: '',
         // 加入时间
-        joinTime:''
+        joinTime: ''
     },
 
     /**
@@ -146,13 +146,45 @@ Page({
     },
 
     getUserInfoDetail() {
-        wx.cloud.database().collection('user').get().then(res=>{
-            if (res.data.length === 1){
+
+        //获取用户表信息
+        wx.cloud.database().collection('user').get().then(res => {
+            //如果用户已存在，则使用初次加入时间
+            if (res.data.length === 1) {
                 // console.log(res.data[0].createTime)
                 let time = res.data[0].createTime
                 this.setData({
                     joinTime: datefns.format(new Date(time), 'yyyy-MM-dd')
                 })
+            } else {
+                //如果用户不存在，则从打卡里挑个最早的作为打开时间
+                wx.cloud.database().collection('blog')
+                    .orderBy('createTime', 'asc')
+                    .limit(1)
+                    .get()
+                    .then(res => {
+                        // if (res.data.length >= 0){
+                        //     console.log(res.data[0].createTime)
+                        // }
+                        //找到最新的一个blog
+                        if (res.data.length === 1) {
+                            let blog = res.data[0]
+                            this.setData({
+                                joinTime: datefns.format(new Date(blog.createTime), 'yyyy-MM-dd')
+                            })
+                            //添加到用户表中
+                            wx.cloud.database().collection('user').add({
+                                data: {
+                                    _id: blog._openid,
+                                    createTime: blog.createTime
+                                }
+                            }).then(res => {
+                                console.log(res)
+                            })
+                            console.log(blog)
+
+                        }
+                    })
             }
         })
     }

@@ -255,17 +255,35 @@ Page({
             _id: this.data.userid
         }).count()
             .then(res => {
+                //如果用户不存在，则添加
                 if (res.total === 0) {
                     userCollec.add({
-                        data:{
+                        data: {
                             ...this.data.userInfo,
                             _id: this.data.userid,
                             createTime: db.serverDate()
                         }
-                    }).then((res=>{
+                    }).then((res => {
                         console.log(res)
                     }))
+                } else if (res.total === 1) {
+                    //如果存在，则更新信息
+                    try {
+                        userCollec.where({
+                            _id: this.data.userid
+                        }).update({
+                            data: {
+                                ...this.data.userInfo
+                            }
+                        }).then(res=>{
+                            console.log(res)
+                        })
+                    } catch (e) {
+                        console.log(e)
+                    }
+
                 }
+
             })
     }
 })
