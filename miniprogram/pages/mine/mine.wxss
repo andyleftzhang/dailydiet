@@ -1,17 +1,21 @@
 /* pages/profile/profile.wxss */
-.container .page {
-    background-color: #f1f1f1;
+.container {
+    background: #f1f1f1;
 }
 
+/*顶部区域*/
 .header {
     width: 100%;
-    height: 580rpx;
+    height: 400rpx;
     position: relative;
 }
+
+/*导航栏*/
 .nav-bar {
     position: absolute;
 }
 
+/*顶部背景*/
 .header-img-container {
     position: absolute;
     left: 0rpx;
@@ -20,38 +24,70 @@
     top: 0rpx;
 }
 
+/*背景图片*/
 .header-img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.profile-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+/*底部区域*/
+.content {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    color: #fff;
-    font-weight: 300;
-    text-shadow: 0 0 3px rbga(0, 0, 0, 0.3);
+    background: #f1f1f1;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    transform: translateY(-30rpx);
+    position: relative;
 }
 
-.avatar-url {
-    width: 200rpx;
-    height: 200rpx;
+/*头像*/
+.avatar-header {
+    position: absolute;
+    transform: translateX(30%) translateY(-40%);
+}
+
+.avatar-header .avatar-url {
+    width: 150rpx;
+    height: 150rpx;
     display: block;
     overflow: hidden;
     border-radius: 50%;
+    border: white 5rpx solid;
 }
 
-.nick-name {
+/*昵称*/
+.nick-name-header {
+    margin-top: 100rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    font-weight: 300;
+    text-shadow: 0 0 3px rbga(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*昵称*/
+.nick-name-header .nick-name {
     font-size: 36rpx;
-    margin-top: 20rpx;
+    font-weight: bold;
+}
+
+/*小程序码*/
+.qrcode-content {
+    font-size: 30rpx;
+    line-height: 1.6em;
+    color: white;
     font-weight: 400;
+    padding: 10rpx 20rpx;
+    background-color: forestgreen;
+    border-radius: 30rpx;
+    border: 2rpx solid white;
 }
 
 .nav {
@@ -60,42 +96,4 @@
     display: block;
     border-radius: 20rpx;
     overflow: hidden;
-    flex: 1;
-}
-
-.nav-item {
-    min-height: 100rpx;
-    position: relative;
-    margin: 0 30rpx;
-    padding: 0 30rpx;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1rpx solid rbga(0, 0, 0, 0.1);
-}
-
-.content {
-    font-size: 30rpx;
-    line-height: 1.6em;
-    flex: 1;
-}
-
-.text {
-    color: #808080;
-}
-
-.content .iconfont {
-    color: #d43c33;
-    font-weight: 600;
-    margin-right: 30rpx;
-}
-
-.content .icon-xiangyou {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 30rpx;
-    color: #808080;
-    font-size: 28rpx;
 }

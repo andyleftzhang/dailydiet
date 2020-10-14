@@ -23,7 +23,7 @@
     margin-left: 20rpx;
     width: 68rpx;
     height: 68rpx;
-    border: 3rpx solid #FBD956;
+    border: 5rpx solid #FBD956;
     display: block;
     overflow: hidden;
     border-radius: 50%;
