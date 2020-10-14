@@ -1,33 +1,41 @@
-<view class="header-img-container">
-    <image class="header-img"
-           mode="aspectFill"
-           bind:tap="changeHeaderImg"
-           src="{{headerImgId}}"></image>
-</view>
-<view class="profile-header">
-    <navigation-bar back="{{true}}" color="#fff"/>
-    <view class="avatar-url">
-        <open-data type="userAvatarUrl"></open-data>
-    </view>
-    <open-data type="userNickName" class="nick-name"/>
-</view>
-
-<view class="nav">
-    <view class="nav-item">
-        <view class="content" hover-class="none" bind:tap="onGetQRCode">
-            <text class="iconfont icon-ziyuanldpi"></text>
-            <text class="text">小程序码</text>
-            <text class="iconfont icon-xiangyou"></text>
+<view class="container">
+    <view class="header">
+        <view class="nav-bar">
+            <navigation-bar back="{{true}}" color="#fff"/>
         </view>
+        <view class="header-img-container">
+            <image class="header-img"
+                   mode="aspectFill"
+                   bind:tap="changeHeaderImg"
+                   src="{{headerImgId}}"></image>
+        </view>
+        <view class="profile-header">
+            <view class="avatar-url">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <open-data type="userNickName" class="nick-name"/>
+        </view>
+
     </view>
 
+    <view class="nav">
+        <view class="nav-item">
+            <view class="content" hover-class="none" bind:tap="onGetQRCode">
+                <text class="iconfont icon-ziyuanldpi"></text>
+                <text class="text">小程序码</text>
+                <text class="iconfont icon-xiangyou"></text>
+            </view>
+        </view>
+
+    </view>
+
+    <van-action-sheet
+            show="{{ show }}"
+            actions="{{ actions }}"
+            cancel-text="取消"
+            bind:cancel="onClose"
+            bind:close="onClose"
+            bind:select="onSelect"
+    />
 </view>
 
-<van-action-sheet
-        show="{{ show }}"
-        actions="{{ actions }}"
-        cancel-text="取消"
-        bind:cancel="onClose"
-        bind:close="onClose"
-        bind:select="onSelect"
-/>
