@@ -24,7 +24,10 @@ App({
 
     getOpenId() {
         wx.cloud.callFunction({
-            name: 'login'
+            name: 'login',
+            data: {
+                $url: 'login'
+            }
         }).then((res) => {
             const openid = res.result.openid;
             this.globalData.openid = openid;

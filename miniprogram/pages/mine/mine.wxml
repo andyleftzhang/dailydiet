@@ -23,6 +23,9 @@
                 <text class="text">小程序码</text>
             </view>
         </view>
+        <view wx:if="{{joinTime!==''}}" class="tip-container">
+            <text class="join-time">{{joinTime}}加入</text>
+        </view>
 
         <view class="nav">
 

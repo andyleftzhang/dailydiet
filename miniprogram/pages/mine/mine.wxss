@@ -74,7 +74,7 @@
 
 /*昵称*/
 .nick-name-header .nick-name {
-    font-size: 36rpx;
+    font-size: 42rpx;
     font-weight: bold;
 }
 
@@ -88,6 +88,17 @@
     background-color: forestgreen;
     border-radius: 30rpx;
     border: 2rpx solid white;
+}
+
+.tip-container {
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+.join-time {
+    font-size: 24rpx;
+    background-color: lightgrey;
+    padding: 5rpx 10rpx;
 }
 
 .nav {

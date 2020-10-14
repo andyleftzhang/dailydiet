@@ -21,8 +21,8 @@
 
 .userinfo-container {
     margin-left: 20rpx;
-    width: 68rpx;
-    height: 68rpx;
+    width: 80rpx;
+    height: 80rpx;
     border: 5rpx solid #FBD956;
     display: block;
     overflow: hidden;

@@ -1,5 +1,7 @@
 const PAGE_COUNT = 10;
 let keyword = ''
+const db = wx.cloud.database()
+const userCollec = db.collection('user')
 Page({
 
     /**
@@ -71,12 +73,15 @@ Page({
 
 
     onLoginSuccess(event) {
-        console.log(event)
+        console.log(event.detail)
         // const detail = event.detail
         this.setData({
             show: true,
             userInfo: event.detail
         })
+
+        //更新用户数据
+        this.updateUserInfo()
     },
 
     onLoginFail() {
@@ -225,7 +230,10 @@ Page({
 
     getOpenId() {
         wx.cloud.callFunction({
-            name: 'login'
+            name: 'login',
+            data: {
+                $url: 'login'
+            }
         }).then((res) => {
             this.setData({
                 userid: res.result.openid
@@ -233,11 +241,31 @@ Page({
         })
     },
 
-    gotoMine(event){
+    gotoMine(event) {
         console.log(event)
         const openid = event.detail.openid
         wx.navigateTo({
             url: `../mine/mine?openid=${openid}`
         })
+    },
+
+    //更新、注册用户信息
+    updateUserInfo() {
+        userCollec.where({
+            _id: this.data.userid
+        }).count()
+            .then(res => {
+                if (res.total === 0) {
+                    userCollec.add({
+                        data:{
+                            ...this.data.userInfo,
+                            _id: this.data.userid,
+                            createTime: db.serverDate()
+                        }
+                    }).then((res=>{
+                        console.log(res)
+                    }))
+                }
+            })
     }
 })
