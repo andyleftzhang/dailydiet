@@ -1,1 +1,13 @@
 /* pages/index/index.wxss */
+page {
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.img-logo {
+    position: fixed;
+    height: 200rpx;
+    width: 100%;
+    bottom: 100rpx;
+}

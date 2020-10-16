@@ -41,7 +41,8 @@ Page({
             },
         ],
         userInfo: {},
-        userid: ''
+        userid: '',
+        adminid: 'ozVWo5ATjPKhwHYMB2I5DhFQjXB0'
     },
 
     onPublish() {

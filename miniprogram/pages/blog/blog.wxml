@@ -20,7 +20,7 @@
                 <x-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"></x-blog-card>
 
                 <view class="blog-control">
-                    <view wx:if="{{item._openid === userid}}" class="blog-shanchu">
+                    <view wx:if="{{item._openid === userid || userid === adminid}}" class="blog-shanchu">
                         <text class="text-shanchu" bind:tap="goDelete" data-blog="{{item}}">删除</text>
                     </view>
 
