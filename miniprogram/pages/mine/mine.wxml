@@ -27,10 +27,11 @@
             <text class="join-time">{{joinTime}}加入</text>
         </view>
 
-        <view class="nav">
+<!--        <view class="nav">-->
+<!--        </view>-->
 
-        </view>
     </view>
+    <food-process class="food-process-class"></food-process>
 
     <van-action-sheet
             show="{{ show }}"

@@ -15,7 +15,7 @@ Page({
         ],
         headerImgId: '',
         // 加入时间
-        joinTime: ''
+        joinTime: '',
     },
 
     /**

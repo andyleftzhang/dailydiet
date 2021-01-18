@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vant/weapp": "^1.5.1",
+    "@vant/weapp": "^1.6.4",
     "date-fns": "^2.16.1"
   }
 }

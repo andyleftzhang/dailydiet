@@ -1,0 +1,23 @@
+/* components/food-process/food-process.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40rpx;
+}
+
+.progress-class {
+   display: block;
+    margin: 20rpx;
+}
+
+.food-pop-class {
+    display: block;
+}
+.add-food-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20rpx;
+}

@@ -1,0 +1,84 @@
+<!--components/food-process/food-process.wxml-->
+<view class="container">
+
+    <text>目标碳水(g): {{target.tanshui}}</text>
+    <van-progress class="progress-class"
+                  pivot-text="{{processTip.tanshui}}"
+                  color="{{current.tanshui > target.tanshui ? '#d43c33':'#228B22'}}"
+                  percentage="{{process.tanshui}}"  />
+
+
+    <text>目标蛋白质(g):  {{target.danbai}}</text>
+    <van-progress class="progress-class "
+                  color="{{current.danbai > target.danbai ? '#d43c33':'#228B22'}}"
+                  pivot-text="{{processTip.danbai}}"
+                  percentage="{{process.danbai}}" />
+
+    <text>目标油脂(g):  {{target.youzhi}}</text>
+    <van-progress
+            class="progress-class"
+            percentage="{{process.youzhi}}"
+            pivot-text="{{processTip.youzhi}}"
+            color="{{current.youzhi > target.youzhi ? '#d43c33':'#228B22'}}"
+    />
+
+    <view class="add-food-container">
+        <van-button plain round type="primary" bind:click="modifyTarget">设置目标</van-button>
+
+        <van-button plain round type="primary" bind:click="addFood">记录摄入</van-button>
+
+
+    </view>
+
+    <van-dialog
+            show="{{ show }}"
+            use-slot
+            title="饮食摄入"
+            position="center"
+            bind:confirm="onConfirm"
+    >
+        <view class="food-pop-class">
+                <van-field
+                        model:value="{{ tanshui }}"
+                        clearable
+                        label="碳水(g)"
+                        type="number"
+                        placeholder="请输入摄入的碳水(g)"
+                />
+
+                <van-field
+                        model:value="{{ danbai }}"
+                        clearable
+                        label="蛋白质(g)"
+                        type="number"
+                        placeholder="请输入摄入的蛋白质(g)"
+                />
+
+                <van-field
+                        model:value="{{ youzhi }}"
+                        clearable
+                        label="油脂(g)"
+                        type="number"
+                        placeholder="请输入摄入的油脂(g)"
+                />
+            </view>
+    </van-dialog>
+
+    <van-dialog
+            show="{{ tizhongShow }}"
+            use-slot
+            title="设置体重"
+            position="center"
+            bind:confirm="onConfirmTarget"
+    >
+        <view class="food-pop-class">
+            <van-field
+                    model:value="{{ tizhong }}"
+                    clearable
+                    label="体重(斤)"
+                    type="number"
+                    placeholder="请输入您的体重(斤)"
+            />
+        </view>
+    </van-dialog>
+</view>
