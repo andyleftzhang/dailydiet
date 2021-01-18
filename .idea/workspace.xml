@@ -4,6 +4,7 @@
     <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
       <workItem from="1605662853846" duration="1986000" />
       <workItem from="1607501085336" duration="705000" />
       <workItem from="1610960495125" duration="9739000" />
-      <workItem from="1610970809441" duration="3342000" />
+      <workItem from="1610970809441" duration="3613000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610973799708</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix:修复bug">
+      <created>1610974292372</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610974292372</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,13 +217,13 @@
     <MESSAGE value="feat: 优化编辑功能" />
     <MESSAGE value="feat: 添加个人中心和小程序码" />
     <MESSAGE value="feat: 支持替换个人头图" />
-    <MESSAGE value="fix:修复bug" />
     <MESSAGE value="feat:优化个人中心" />
     <MESSAGE value="feat:调整个人中心" />
     <MESSAGE value="feat:添加用户打卡加入时间" />
     <MESSAGE value="feat:优化老用户打加入时间" />
     <MESSAGE value="opti:替换封面" />
     <MESSAGE value="feat:增加饮食记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:增加饮食记录" />
+    <MESSAGE value="fix:修复bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:修复bug" />
   </component>
 </project>

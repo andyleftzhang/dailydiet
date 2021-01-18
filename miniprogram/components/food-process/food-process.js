@@ -122,6 +122,11 @@ Component({
             )
             wx.setStorageSync('target', target)
             this.getData()
+        },
+
+        clearStorage() {
+            wx.clearStorageSync()
+            this.getData()
         }
 
     }
