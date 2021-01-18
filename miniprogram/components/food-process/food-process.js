@@ -34,13 +34,13 @@ Component({
 
             let target = {}
             let tar = wx.getStorageSync('target')
-            if (tar === null || tar === ''){
+            if (tar === null || tar === '') {
                 target = {
                     tanshui: 150,
                     danbai: 150,
                     youzhi: 75,
                 }
-            }else {
+            } else {
                 target = tar
             }
 
@@ -100,24 +100,27 @@ Component({
             this.getData()
         },
 
-        modifyTarget(event){
+        modifyTarget(event) {
             this.setData({
-                tizhongShow:true
+                tizhongShow: true
             })
         },
 
-        onConfirmTarget(event){
+        onConfirmTarget(event) {
             let weight = parseInt(this.data.tizhong)
             let target = {
                 tanshui: weight,
                 danbai: weight,
-                youzhi: Math.floor(weight/2)
+                youzhi: Math.floor(weight / 2)
             }
 
             this.setData(
-                target
+                {
+                    target,
+                    tizhong: weight
+                }
             )
-            wx.setStorageSync('target',target)
+            wx.setStorageSync('target', target)
             this.getData()
         }
 

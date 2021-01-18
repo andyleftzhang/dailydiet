@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea8a4518-90ac-44a1-89e0-a77c8e72354e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/images/shouye_tupian_beijing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/images/shouye_tupian_shumiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/style/animate.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/mine/mine.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +79,7 @@
       <workItem from="1605662853846" duration="1986000" />
       <workItem from="1607501085336" duration="705000" />
       <workItem from="1610960495125" duration="9739000" />
-      <workItem from="1610970809441" duration="2861000" />
+      <workItem from="1610970809441" duration="3342000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>
@@ -200,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602846426420</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat:增加饮食记录">
+      <created>1610973799708</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610973799708</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +215,7 @@
     <MESSAGE value="feat:添加用户打卡加入时间" />
     <MESSAGE value="feat:优化老用户打加入时间" />
     <MESSAGE value="opti:替换封面" />
-    <option name="LAST_COMMIT_MESSAGE" value="opti:替换封面" />
+    <MESSAGE value="feat:增加饮食记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:增加饮食记录" />
   </component>
 </project>
