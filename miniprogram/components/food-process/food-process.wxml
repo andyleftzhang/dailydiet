@@ -40,7 +40,6 @@
         <view class="food-pop-class">
             <van-field
                     model:value="{{ tanshui }}"
-                    required
                     clearable
                     label="碳水(g)"
                     type="digit"
@@ -57,7 +56,6 @@
 
             <van-field
                     model:value="{{ youzhi }}"
-                    required
                     clearable
                     label="油脂(g)"
                     type="digit"
