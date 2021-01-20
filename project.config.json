@@ -38,7 +38,7 @@
   },
   "appid": "wx9600e5c5a69e0eed",
   "projectname": "dailydiet",
-  "libVersion": "2.12.1",
+  "libVersion": "2.14.4",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",

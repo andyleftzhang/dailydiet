@@ -14,7 +14,7 @@
                   pivot-text="{{processTip.danbai}}"
                   percentage="{{process.danbai}}"/>
 
-    <text>目标油脂(g): {{target.youzhi}}</text>
+    <text>脂肪上限(g): {{target.youzhi}}</text>
     <van-progress
             class="progress-class"
             percentage="{{process.youzhi}}"
@@ -40,9 +40,10 @@
         <view class="food-pop-class">
             <van-field
                     model:value="{{ tanshui }}"
+                    required
                     clearable
                     label="碳水(g)"
-                    type="number"
+                    type="digit"
                     placeholder="请输入摄入的碳水(g)"
             />
 
@@ -50,15 +51,16 @@
                     model:value="{{ danbai }}"
                     clearable
                     label="蛋白质(g)"
-                    type="number"
+                    type="digit"
                     placeholder="请输入摄入的蛋白质(g)"
             />
 
             <van-field
                     model:value="{{ youzhi }}"
+                    required
                     clearable
                     label="油脂(g)"
-                    type="number"
+                    type="digit"
                     placeholder="请输入摄入的油脂(g)"
             />
         </view>
@@ -76,7 +78,7 @@
                     model:value="{{ tizhong }}"
                     clearable
                     label="体重(斤)"
-                    type="number"
+                    type="digit"
                     placeholder="请输入您的体重(斤)"
             />
         </view>

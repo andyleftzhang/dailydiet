@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/components/food-process/food-process.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <workItem from="1605662853846" duration="1986000" />
       <workItem from="1607501085336" duration="705000" />
       <workItem from="1610960495125" duration="9739000" />
-      <workItem from="1610970809441" duration="3613000" />
+      <workItem from="1610970809441" duration="6872000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602428933102</created>
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610974292372</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix:修复bug">
+      <created>1610974535332</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610974535332</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -38,7 +38,7 @@ Component({
                 target = {
                     tanshui: 150,
                     danbai: 150,
-                    youzhi: 75,
+                    youzhi: 38,
                 }
             } else {
                 target = tar
@@ -83,11 +83,22 @@ Component({
 
 
         onConfirm(event) {
-            console.log(`${this.data.tanshui}  ${this.data.danbai} ${this.data.youzhi}`)
+            let tanshui = parseFloat(this.data.tanshui)
+            let danbai = parseFloat(this.data.danbai)
+            let youzhi = parseFloat(this.data.youzhi)
+            if (isNaN(tanshui)){
+                tanshui = 0;
+            }
+            if (isNaN(danbai)){
+                danbai = 0;
+            }
+            if (isNaN(youzhi)){
+                youzhi = 0;
+            }
             let newCurrent = {
-                tanshui: this.data.current.tanshui + parseInt(this.data.tanshui),
-                danbai: this.data.current.danbai + parseInt(this.data.danbai),
-                youzhi: this.data.current.youzhi + parseInt(this.data.youzhi),
+                tanshui: this.data.current.tanshui + tanshui,
+                danbai: this.data.current.danbai + danbai,
+                youzhi: this.data.current.youzhi + youzhi,
             }
 
             this.setData({
@@ -107,11 +118,11 @@ Component({
         },
 
         onConfirmTarget(event) {
-            let weight = parseInt(this.data.tizhong)
+            let weight = parseFloat(this.data.tizhong)
             let target = {
                 tanshui: weight,
                 danbai: weight,
-                youzhi: Math.floor(weight / 2)
+                youzhi: Math.floor(weight / 4)
             }
 
             this.setData(
